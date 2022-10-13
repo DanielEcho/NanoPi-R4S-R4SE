@@ -30,8 +30,8 @@ mkdir package/community
 pushd package/community
 
 # Add luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
+# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+# svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
 
 # alist
 git clone https://github.com/sbwml/openwrt-alist --depth=1
@@ -42,12 +42,13 @@ rm -rf openwrt-package/verysync
 rm -rf openwrt-package/luci-app-verysync
 
 # Add luci-app-ssr-plus
-# git clone --depth=1 https://github.com/fw876/helloworld
-git clone --depth=1 https://github.com/DHDAXCW/helloworld
+rm -rf package/helloworld
+git clone --depth=1 https://github.com/fw876/helloworld
+# git clone --depth=1 https://github.com/DHDAXCW/helloworld
 
 
 # Add luci-proto-minieap
-git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
+# git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 
 
 
@@ -75,11 +76,11 @@ rm -rf ./luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 cp -f $GITHUB_WORKSPACE/data/bg1.jpg luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
 # Add subconverter
-git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
+# git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
 
 # Add luci-app-services-wolplus
-svn co https://github.com/msylgj/OpenWrt_luci-app/trunk/luci-app-services-wolplus
+# svn co https://github.com/msylgj/OpenWrt_luci-app/trunk/luci-app-services-wolplus
 
 # Add apk (Apk Packages Manager)
 svn co https://github.com/openwrt/packages/trunk/utils/apk

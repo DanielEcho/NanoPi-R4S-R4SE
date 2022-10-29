@@ -7,7 +7,10 @@
 # Author: SuLingGG
 # Blog: https://mlapp.cn
 #=================================================
-
+rm -fr ./feeds/packages/net/miniupnpd
+svn co https://github.com/Ljzkirito/openwrt-packages/trunk/miniupnpd feeds/packages/net/miniupnpd
+rm -fr ./feeds/luci/applications/luci-app-upnp
+svn co https://github.com/Ljzkirito/openwrt-packages/trunk/luci-app-upnp feeds/luci/applications/luci-app-upnp
 # Add cpufreq
 rm -rf ./feeds/luci/applications/luci-app-cpufreq 
 svn co https://github.com/DHDAXCW/luci-bt/trunk/applications/luci-app-cpufreq ./feeds/luci/applications/luci-app-cpufreq

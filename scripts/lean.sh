@@ -130,6 +130,3 @@ wget -P target/linux/rockchip/armv8/base-files/usr/bin/ https://github.com/frien
 
 # 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
-# 更新miniupnp版本
-rm -fr feeds/packages/net/miniupnpd
-svn co https://github.com/DanielEcho/openwrt-packages/trunk/miniupnpd feeds/packages/net/miniupnpd
